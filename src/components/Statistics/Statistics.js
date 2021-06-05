@@ -20,7 +20,7 @@ function randomColor(){
 }
 
 Statistics.propTypes = {
-  title: PropTypes.string.isRequired, 
+  
   stats: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
