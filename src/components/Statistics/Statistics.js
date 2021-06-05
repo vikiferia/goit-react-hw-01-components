@@ -15,16 +15,9 @@ const Statistics = ({title, stats}) => (
   </ul>
 </section>
 )
-const randomColor = () => {
-  let col = Math.round(255.0 * Math.random());
-  const r = col.toString(16);
-  col = Math.round(255.0 * Math.random());
-  const g = col.toString(16);
-  col = Math.round(255.0 * Math.random());
-  const b = col.toString(16);
-  col = `#${r}${g}${b}`;
-  return col;
-};
+function randomColor(){
+   return 'hsla(' + (Math.random() * 360) + ', 100%, 50%, 1)';
+}
 
 Statistics.propTypes = {
   title: PropTypes.string.isRequired, 
